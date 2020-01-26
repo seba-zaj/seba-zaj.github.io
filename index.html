@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SCSS</title>
+</head>
+<body>
+   <header class="side-header">
+       <div class="blackout side-header__blackout"></div>
+       <nav class="side-header__nav">
+           <!-- klasa ul aby elementy blokowe bo ma być item ul class="nav" -blok, następnie item -->
+           <!-- ul zastąp  -->
+           <ul class="nav">
+               <li class="nav__item"><a class="nav__link" href="#start">Start</a></li>
+               <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+               <li class="nav__item"><a class="nav__link" href="#lokalizacja">Lokalizacja</a></li>
+               <li class="nav__item"><a class="nav__link" href="#kontakt">Kontakt</a></li>
+           </ul>
+       </nav>
+       <h1 class="heading--h1 side-header__h1">Restauracja Dolce Vita</h1>
+       <a  class="btn btn--red btn--circle side-header__button" href="#">Menu</a>       
+   </header>
+   <main>
+       <section class="side-section" id="start">
+            <h2 class="heading--h2">Start</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint, fuga delectus velit, quasi aliquam accusantium ipsum sunt suscipit dolores doloremque dolore quidem. Sunt obcaecati natus earum corrupti? Atque similique aut quidem voluptates sequi temporibus, nisi, sed in eius eum nihil qui necessitatibus. Neque consectetur expedita vel minima ipsa corrupti possimus commodi deleniti maxime blanditiis placeat doloribus tempora, unde nisi dolorem, sequi distinctio quidem dolor sapiente temporibus culpa quas? Debitis id doloribus quam quis vitae nam itaque, non obcaecati? Quisquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section class="side-section side-section--bg-color" id ="menu">
+            <h2 class="heading--h2 text-color-white">Menu</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col col--md50 col--lg25">
+                        <div class="image-box">
+                            <div class="image-box__image"></div>
+                                <div class="image-box__text text-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed!
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg25">
+                        <div class="image-box">
+                            <div class="image-box__image image-box__image--next "></div>
+                                <div class="image-box__text text-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed!
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg25">
+                        <div class="image-box">
+                            <div class="image-box__image"> </div>
+                                <div class="image-box__text text-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed!
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col col--md50 col--lg25">
+                        <div class="image-box">
+                            <div class="image-box__image image-box__image--next"></div>
+                                <div class="image-box__text text-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sed!
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section class="side-section" id="lokalizacja">
+            <h2 class="heading--h2">Lokalizacja</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.069140788192!2d19.940922450943482!3d50.06626677932327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1aa3e418c3%3A0x61caab5b1033da73!2sZacisze%208%2C%2031-156%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1576406844929!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <section class="side-section side-contact" id="kontakt">
+           <div class="blackout side-contact__blackout"></div>
+             <h2 class="heading--h2 side-contact__h2 text-color-white">Kontakt</h2>
+             <div class="container">
+                 <div class="row">
+                     <div class="col">
+                         <form class="form side-contact__form" >
+                             <label class="form__label " for="mail">Podaj twój e-mail</label><br>
+                             <input  class="form__item" id="mail"><br>
+                             <label class="form__label " for="subject">Podaj temat wiadomości</label><br>
+                             <input class="form__item" id="subject"><br>
+                             <label class="form__label " for="massage">Podaj treść wiadomości</label><br>
+                             <textarea class="form__item"  id="massage" cols="15" rows="5"></textarea><br>
+                             <input class="form__item btn btn--outline"  type="submit" value="Wyślij">
+                         </form>
+                     </div>
+                 </div>
+             </div>
+        </section>
+        <footer class='side-footer'>
+            <div class="container">
+                <div class="row">
+                    <div class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, natus. A nulla vitae recusandae deleniti, debitis ullam temporibus laudantium culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, commodi?</div>
+                    <div class="col col--md33 text-align-justify" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, natus. A nulla vitae recusandae deleniti, debitis ullam temporibus laudantium culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, commodi?</div>
+                    <div class="col col--md33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, natus. A nulla vitae recusandae deleniti, debitis ullam temporibus laudantium culpa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, commodi?</div>
+                </div>
+            </div>
+        </footer>
+   </main>
+</body>
+</html>
+
+<!-- do testów
+<a class="btn btn--red" href="#">link</a>
+<a class="btn btn--green btn--circle" href="#">link</a>
+<a class="btn btn--outline" href="#">link</a>
+<div class="container">
+    <div class="row">
+        <div class="col col--md50 col--lg25">div numer 1</div>
+        <div class="col col--md50 col--lg25">div numer 2</div>
+        <div class="col col--md50 col--lg25">div numer 3</div>
+        <div class="col col--md50 col--lg25">div numer 4</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col--lg33">div nr 1</div>
+        <div class="col col--lg33">div nr 2</div>
+        <div class="col col--lg33">div nr 3</div>
+    </div>
+</div> -->
